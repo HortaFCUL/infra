@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m
-  path: "./cert-manager/controller"
+  path: "./cluster/prod/cert-manager/controller"
   prune: true
   sourceRef:
     kind: GitRepository
@@ -25,7 +25,7 @@ spec:
   dependsOn:
     - name: cert-manager
   interval: 5m
-  path: "./cert-manager/certs"
+  path: "./cluster/prod/cert-manager/certs"
   prune: true
   sourceRef:
     kind: GitRepository

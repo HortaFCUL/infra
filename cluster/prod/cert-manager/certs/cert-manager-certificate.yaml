@@ -2,10 +2,10 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: sko-ai
+  name: hortafcul
   namespace: cert-manager
 spec:
-  secretName: sko-ai-tls
+  secretName: hortafcul-tls
   issuerRef:
     name: letsencrypt
     kind: ClusterIssuer

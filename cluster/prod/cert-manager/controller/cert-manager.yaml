@@ -14,7 +14,7 @@ spec:
       version: v1.2.0
   interval: 30m
   values:
-    installCRDs: false
+    installCRDs: true
     webhook:
       enabled: true
     extraArgs:

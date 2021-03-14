@@ -1,0 +1,79 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: traefik
+  namespace: network
+  annotations:
+    service.beta.kubernetes.io/do-loadbalancer-healthcheck-port: "80"
+    service.beta.kubernetes.io/do-loadbalancer-healthcheck-protocol: "http"
+    service.beta.kubernetes.io/do-loadbalancer-healthcheck-path: "/ping"
+    service.beta.kubernetes.io/do-loadbalancer-protocol: "http"
+    service.beta.kubernetes.io/do-loadbalancer-tls-ports: "443"
+    service.beta.kubernetes.io/do-loadbalancer-tls-passthrough: "true"
+    service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: "true"
+    service.beta.kubernetes.io/do-loadbalancer-redirect-http-to-https: "true"
+spec:
+  maxHistory: 3
+  interval: 5m0s
+  suspend: false
+  releaseName: traefik
+  chart:
+    spec:
+      chart: traefik
+      version: 9.12.3
+      sourceRef:
+        kind: HelmRepository
+        name: traefik
+        namespace: flux-system
+
+  values:
+    image:
+      repository: traefik
+      tag: 2.3.7
+      pullPolicy: IfNotPresent
+
+    env:
+      - name: TZ
+        value: Europe/Lisbon
+
+    installCRDs: true
+
+    ingressClass:
+      enabled: true
+      isDefaultClass: "true"
+
+    ingressRoute:
+      dashboard:
+        enabled: true
+
+    globalArguments:
+      - --api
+      - --entrypoints.web.Address=:8000
+      - --entrypoints.websecure.Address=:4443
+      - --global.sendanonymoususage=false
+      - --api.insecure=true
+      - --accesslog=true
+      - --ping.entryPoint=web
+      - --providers.kubernetescrd
+
+    ports:
+      traefik:
+        expose: true
+        port: 8080
+        protocol: TCP
+      web:
+        expose: true
+        exposedPort: 80
+        port: 8000
+        protocol: TCP
+      websecure:
+        expose: true
+        exposedPort: 443
+        port: 8443
+        protocol: TCP
+
+    logs:
+      general:
+        level: INFO
+      access:
+        enabled: true

@@ -1,0 +1,4 @@
+creation_rules:
+  - encrypted_regex: '((?i)(pass|secret($|[^N])|key|token|^data$|^stringData$))'
+    pgp: >-
+      E357B3731E9AFAB4FCF87A0CDAE80E930711EA3A

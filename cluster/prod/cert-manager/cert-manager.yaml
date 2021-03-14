@@ -1,0 +1,38 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: cert-manager
+  namespace: cert-manager
+spec:
+  chart:
+    spec:
+      chart: cert-manager
+      sourceRef:
+        kind: HelmRepository
+        name: jetstack
+      version: v1.2.0
+  interval: 30m
+  values:
+    installCRDs: true
+    webhook:
+      enabled: true
+    extraArgs:
+    - --dns01-recursive-nameservers=1.1.1.1:53
+    - --dns01-recursive-nameservers-only
+    ingresShim:
+      defaultIssureName: letsencrypt-issuer
+      defaultIssureKind: ClusterIssuer
+    cainjector:
+      replicaCount: 1
+    podDnsPolicy: "None"
+    podDnsConfig:
+      nameservers:
+      - "1.1.1.1"
+      - "8.8.8.8"
+    # Enabled once prometheus-operator is installed
+    prometheus:
+      enabled: false
+      servicemonitor:
+        enabled: false
+        namespace: cert-manager

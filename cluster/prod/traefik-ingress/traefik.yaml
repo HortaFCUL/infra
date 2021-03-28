@@ -19,17 +19,13 @@ spec:
         namespace: traefik-ingress
 
   values:
+    ingressClass:
+      enabled: true
+      isDefaultClass: true
+
     env:
       - name: TZ
         value: Europe/Lisbon
-
-    #ingressClass:
-    #  enabled: true
-    #  isDefaultClass: "true"
-
-    #ingressRoute:
-    #  dashboard:
-    #    enabled: true
 
     globalArguments:
       - --api

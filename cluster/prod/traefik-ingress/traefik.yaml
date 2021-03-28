@@ -33,6 +33,7 @@ spec:
 
     globalArguments:
       - --api
+      - --ping
       - --entrypoints.web.Address=:8000
       - --entrypoints.websecure.Address=:8443
       - --global.sendanonymoususage=false

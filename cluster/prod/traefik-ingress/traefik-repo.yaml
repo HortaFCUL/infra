@@ -4,5 +4,5 @@ metadata:
   name: traefik
   namespace: traefik-ingress
 spec:
-  interval: 1h
-  url: https://containous.github.io/traefik-helm-chart
+  interval: 10m
+  url: https://helm.traefik.io/traefik

@@ -72,7 +72,7 @@ spec:
         service.beta.kubernetes.io/do-loadbalancer-healthcheck-protocol: "tcp"
         #service.beta.kubernetes.io/do-loadbalancer-healthcheck-protocol: "http"
         #service.beta.kubernetes.io/do-loadbalancer-healthcheck-path: "/ping?src=do-lb"
-        service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: "true"
+        service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: "false" # todo: fix this
 
     logs:
       general:

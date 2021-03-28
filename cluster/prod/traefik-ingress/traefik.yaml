@@ -39,7 +39,6 @@ spec:
       - --global.sendanonymoususage=false
       - --api.insecure=true
       - --accesslog=true
-      - --ping.entryPoint=web
       - --providers.kubernetescrd
 
     ports:

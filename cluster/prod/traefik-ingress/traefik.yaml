@@ -43,16 +43,17 @@ spec:
     ports:
       traefik:
         expose: true
+        exposedPort: 8080
         port: 8080
         protocol: TCP
       web:
         expose: true
-        exposedPort: 80
+        exposedPort: 8000
         port: 8000
         protocol: TCP
       websecure:
         expose: true
-        exposedPort: 443
+        exposedPort: 8433
         port: 8443
         protocol: TCP
 

@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
-  name: traefik-helm-repo
+  name: traefik
   namespace: traefik-ingress
 spec:
   interval: 1h

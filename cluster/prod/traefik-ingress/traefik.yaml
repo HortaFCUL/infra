@@ -15,7 +15,7 @@ spec:
       version: 9.12.3
       sourceRef:
         kind: HelmRepository
-        name: traefik-helm-repo
+        name: traefik
         namespace: traefik-ingress
 
   values:

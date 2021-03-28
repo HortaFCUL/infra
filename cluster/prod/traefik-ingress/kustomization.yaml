@@ -4,3 +4,4 @@ resources:
   - _namespace.yaml
   - traefik.yaml
   - traefik-repo.yaml
+  - traefik-dashboard.yaml

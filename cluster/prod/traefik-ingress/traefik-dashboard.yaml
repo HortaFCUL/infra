@@ -5,7 +5,7 @@ metadata:
   namespace: traefik-ingress
 spec:
   entryPoints:
-    - web
+    - websecure
   routes:
     - match: Host(`traefik.infra.hortafcul.pt`)
       kind: Rule

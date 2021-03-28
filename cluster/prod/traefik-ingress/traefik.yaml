@@ -32,6 +32,10 @@ spec:
       - --global.sendanonymoususage=false
       - --api.insecure=true
       - --accesslog=true
+      # ok if only the loadbalancer can access these ports
+      - --entryPoints.web.forwardedHeaders.insecure
+      - --entryPoints.websecure.forwardedHeaders.insecure
+
 
     ports:
       traefik:
@@ -65,10 +69,10 @@ spec:
         service.beta.kubernetes.io/do-loadbalancer-tls-ports: "443"
         service.beta.kubernetes.io/do-loadbalancer-tls-passthrough: "true"
         service.beta.kubernetes.io/do-loadbalancer-healthcheck-port: "80"
-        service.beta.kubernetes.io/do-loadbalancer-healthcheck-protocol: "tcp"
-        #service.beta.kubernetes.io/do-loadbalancer-healthcheck-protocol: "http"
-        #service.beta.kubernetes.io/do-loadbalancer-healthcheck-path: "/ping?src=do-lb"
-        service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: "false"
+        #service.beta.kubernetes.io/do-loadbalancer-healthcheck-protocol: "tcp"
+        service.beta.kubernetes.io/do-loadbalancer-healthcheck-protocol: "http"
+        service.beta.kubernetes.io/do-loadbalancer-healthcheck-path: "/ping?src=do-lb"
+        service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: "true"
 
     logs:
       general:

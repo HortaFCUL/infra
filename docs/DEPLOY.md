@@ -8,7 +8,7 @@ https://toolkit.fluxcd.io/get-started/
 
 3. Export the token in your command line
    ```sh
-   export GITHUB_TOKEN=e1415188425e47514752aea8ad3942fd0a2a553b
+   export GITHUB_TOKEN=
    ```
 
 4. Check everything is alright

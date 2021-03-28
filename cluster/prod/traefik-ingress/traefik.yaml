@@ -74,7 +74,7 @@ spec:
         service.beta.kubernetes.io/do-loadbalancer-tls-passthrough: "true"
         service.beta.kubernetes.io/do-loadbalancer-healthcheck-port: "80"
         service.beta.kubernetes.io/do-loadbalancer-healthcheck-protocol: "http"
-        service.beta.kubernetes.io/do-loadbalancer-healthcheck-path: "/ping"
+        service.beta.kubernetes.io/do-loadbalancer-healthcheck-path: "/ping?src=do-lb"
         service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: "true"
 
     logs:

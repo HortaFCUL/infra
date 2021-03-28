@@ -74,6 +74,10 @@ spec:
         #service.beta.kubernetes.io/do-loadbalancer-healthcheck-path: "/ping?src=do-lb"
         service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: "false" # todo: fix this
 
+    ingressRoute:
+      dashboard:
+        enabled: false
+
     logs:
       general:
         level: INFO

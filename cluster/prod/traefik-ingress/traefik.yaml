@@ -23,13 +23,13 @@ spec:
       - name: TZ
         value: Europe/Lisbon
 
-    ingressClass:
-      enabled: true
-      isDefaultClass: "true"
+    #ingressClass:
+    #  enabled: true
+    #  isDefaultClass: "true"
 
-    ingressRoute:
-      dashboard:
-        enabled: true
+    #ingressRoute:
+    #  dashboard:
+    #    enabled: true
 
     globalArguments:
       - --api

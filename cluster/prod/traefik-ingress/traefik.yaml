@@ -49,12 +49,12 @@ spec:
         protocol: TCP
       web:
         expose: true
-        exposedPort: 8000
+        exposedPort: 80
         port: 8000
         protocol: TCP
       websecure:
         expose: true
-        exposedPort: 8433
+        exposedPort: 443
         port: 8443
         protocol: TCP
 
@@ -69,10 +69,10 @@ spec:
       annotations:
         service.beta.kubernetes.io/do-loadbalancer-name: "hortafcul-traefik"
         service.beta.kubernetes.io/do-loadbalancer-protocol: "http"
-        service.beta.kubernetes.io/do-loadbalancer-http-ports: "8000"
-        service.beta.kubernetes.io/do-loadbalancer-tls-ports: "8443"
+        service.beta.kubernetes.io/do-loadbalancer-http-ports: "80"
+        service.beta.kubernetes.io/do-loadbalancer-tls-ports: "443"
         service.beta.kubernetes.io/do-loadbalancer-tls-passthrough: "true"
-        service.beta.kubernetes.io/do-loadbalancer-healthcheck-port: "8000"
+        service.beta.kubernetes.io/do-loadbalancer-healthcheck-port: "80"
         service.beta.kubernetes.io/do-loadbalancer-healthcheck-protocol: "http"
         service.beta.kubernetes.io/do-loadbalancer-healthcheck-path: "/ping"
         service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: "true"

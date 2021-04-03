@@ -22,7 +22,7 @@ https://toolkit.fluxcd.io/get-started/
      --owner=hortafcul \
      --repository=infra \
      --team=infra \
-     --path=./main-cluster
+     --path=./main-cluster/core
    ```
 
 ## Removing FluxCD

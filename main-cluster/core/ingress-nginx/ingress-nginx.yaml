@@ -15,7 +15,7 @@ spec:
   interval: 1h
   values:
     controller:
-      replicaCount: 1
+      replicaCount: 2
       ingressClass: internal
 
       extraArgs:
@@ -28,7 +28,6 @@ spec:
         ssl-protocols: "TLSv1.3 TLSv1.2 TLSv1.1"
         use-proxy-protocol: "true"
         hsts: false
-
 
       service:
         enabled: true

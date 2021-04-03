@@ -4,35 +4,66 @@ metadata:
     name: authelia-config
     namespace: authelia
 data:
-    users_database.yml: ENC[AES256_GCM,data:m0EvmFtz6fOUXjhNP75gDWiyOYWODEDZ6NwNxGpACTm7Afl7if4ii3jgWbsFz5FeSOXXWk1vK7ytyvRjJHaWbWJe72SY7KT5FDue52tRm/0Krym5MlYxPkXjLS0t7b4xut9umrjmdhktHozynqdpSjMvgS+coKtM9mCWq8li0r/DZA83V+QHVHDEt1rxi4GqWUwEQI+aDBEzEhbjUHpYE61EGi4z5GBx37p5pPAXElWj4pQZobXRUs55SGVvbOuwQPpqPM27Rgky3avWsGzfrN1HQ1NoWohI/n0GdLLE8SZ36QAMXF9gAwqcI5CPdDhgBVjEBpif/ETpmvlk8zaIOqscY39Rh9poJmYowSfJ8LvxUg2xyiKNMYERjMa56tE2LsCWlVt/VXvcPUKsCF31gB1uoC09270d6BSR1cO9Wj9CeSxhWZkpfWoNs+A=,iv:PI1Ko6218fNdg92GjiSlABReKoqAsvMGVrGcjC2CpLk=,tag:2e1JXcL3jJZ7YUHUn8ZktA==,type:str]
-    configuration.yml: ENC[AES256_GCM,data:wCACLxtz1+s9Vy2CRl194CWfxXvwg6rIUd+8WSdt8Au3ejMMMIyTk7XWIhgmSDEMxiBIVt6vzBit68WfZHh9ym53xQnJi6CQRhYzaPcsBouhr0Axe4Rhr8wgmln8qMW2WZLGGUA9BqnDbEFFgeGAGlhbJ/nxMyfFiTPMgzKFgBoR4xx3oQNwzd37EWLMsWaL0Df1jLJBIvAce+deHQVUMqDL5Z8TVd+OB8eOksy0Ooyr+adbDEYEaIqkTkNByHLZUI52w1F/OGatdY2b3AMTfKuLONpOZHgTuaAK2yJQUqZrdiQQcWKL/adlqBNpkzubJYWSn0/1K+4agoa4hRpuoUx8YWBZgwYa5GlostcwyW/U9yUK1vMn0xBQffULEPDjpeiR1+d84mXs6eNwsXPnLgbJ0Dqmk4EhGcHlUrUsIxxj9NsPfTw3HogBaPxVSZ91iALoUfK5GGW45r/9pOu+DfKucZQmlk7XcQm6cBNWwcch1L5Zjvwt7rWE4WNQA/ejfVSC+ZHPhxT3ezxOue6/ELxyUcVwuWXl3jDvNTjDcekpLfRd3ccPFZvggsHkhOwTEImEoRJlUHmlr2EQbxqX99wf18GuofhFFzRvrVSaDwXcomRVWGERoZnPN1mqPkZbu6TBr1zI3LTg8+pGax95fy/8uPwi9CAtHE+IggDbP2W1WucsUqJCfrsNRxNDbh+EK4BXZqYYeXuR9ARtvkL354W2ESnB76MS+G2cpvr2EGDYKMxIjMm4+ZR2ipTf8SUAS6QFV4jSb95G0kn2WK8U9r6qn7JU0wjHo6aSynyHKQRwtV+kEcf7+QYBGF9uHE0iMEwXrqqymB+8VcPc0gX77KXl2GigQvEYJDPLvKG2QEudk8LJo6XTyJ4lewb4E+uQiGJ16zrqlOpujDLHU5+VV40Sy3wHNcJuKW6jtV6NY58Zd0q/nzD282WAzINDuo1fx+kCUw0DY3YotOpYIPPeQ4y+NoySTz9R+UE/A2oCou9gJM+8ZlyvqkZFfkelTPCQWvm9gwxFI10qcO9twsjUvCtJ2hmFxQ7oUqw67dHvCitJxh7Lkalf3zabf5hnqryuoCqQzAbD/yd7WcL90UxuuFivOWkVqmzXlXa+kfnu44Ia1bsEiY7ANObodvuEVOknyyMohrcn0J3OnVBoSBjIQAWL2+ZmKJfc9KzEhp+BIsmtG+AqLWrA48feWS3RrU88EL+BpDtOJAtcO175CgiU7PSToroNQg7QhIIQy9BASiUM3ml4VD8wei77QPb0xvJAL0DNt/Ue3YXpvlRy0fXQ0VyuoulnOQ6ZHxWmkBdhZEeHmGNbg6pO4wh2IIvnrCoyrngw+14jtg==,iv:AI/t2fNMeWgbuEhz52IBRL7jtzfokBdFbTqhWsE+FNo=,tag:1Z+XqwPUtqXqYlzDJyvImQ==,type:str]
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    lastmodified: '2021-04-03T17:31:41Z'
-    mac: ENC[AES256_GCM,data:57CC8Wy/YKFDP0seQuYN9Ey70PhNk0v6IIAvTZCNmaG6gyjU+sbbJQ8cZ0kkgeI3SrnN3MtR04N0aJXAJgokXS8V9u9gel3r0dXN4DbHaEO0IVeEHYeO5oYY3GJmT+Iah50VGra1oK5ete48UExt/OeMiGBcqrqKwDOVBcLvNbg=,iv:SKR0Z+Ttzp/ZZFLXRexK6b4O/NQW/lOO/8Rj1jLLVyk=,tag:PcTHo8TZmwc+9TTd3L3UtA==,type:str]
-    pgp:
-    -   created_at: '2021-04-03T17:31:41Z'
-        enc: |
-            -----BEGIN PGP MESSAGE-----
+    users_database.yml: |
+        # docker run authelia/authelia:latest authelia hash-password 'yourpassword'
+        users:
+          tiago:
+            displayname: "Tiago Dias"
+            password: "$argon2id$v=19$m=1048576,t=1,p=8$SW9DY0Y5cHFSSHZWM3A3TA$PuqcY+7wWe+ri4lI64tkxbYMBVGbuD0/iM1FPaW+LV0" # paLxEsfQA2LE
+            email: "tiagoadias@gmail.com"
+            groups:
+              - admins
+              - guardians
 
-            hQIMA7C6ZdcckODLAQ//YMORWOB6VBl28vUC8VZizOw6nv5ItISGZUJHe+OLTuHF
-            H2chMFwADxYJ7PttfPRIpeN87cRkd6gcp8v3zxzYnoxk1RdwgMWPjwQkn3mFK3E9
-            La9AHxRt7fH5gNSWUanc/GWMAaG0LxNPu0lIDWdQA0ZxNu4g1wJIXf9R+AbTfbLn
-            070Ws/2gSG0s2S+wa8NOjCzfX6SKWMPrThATbjxHOX8aD/F19t6fxiWKZK/eB9hG
-            ILQfORn9Lb/5aJJW0Pk/zmekM+DOIDBZR5WpdyjwGyilTIgPwc//P2HRL5TMaMYq
-            gGmpwkOwSvcG000lI2N1Ur5v8kqGzYDjRzRgvxUzFrQSg9mFW5EeFDU8fYRY734b
-            HqjX0Kkoy81N1cT7JMCFvkgbB54/bAuQ5A+iy941OclF2r0UTABh4vYBTKOXNG7j
-            x1Ob3ePyffiee/dqypmBXrAb/ErASfkFxnHFHHRBeBFFcJXci5y+HGdW1vq8ieid
-            jtKw8bAiyq/3t/pcgaKmLjQRTTEbzQgJo7sJ5GZeIymTjKg/TeEAMWYap3+PnClR
-            13z7rS85EmDOF8PKQ9OgDGBkM/Cfk5PxDxliaHt+3fOmrNiP3IxqgtPu080FYBKb
-            CbFO8qym49EBue+w446GwNpM4LEYIlUnMQ45gZH8yKALH7c0OTS+DWYrnfD1T1vS
-            XAHSNKs9hNlIcBaOqboUbKtZFo3T4He5WDlFgaNZegoIR6LVsY2wtcu10Yzfuad5
-            tRoqdbqTvYBdjeXx+SXFwNMtAsSP80E0XuSQmlacsjw21qxpnbaYpLUvbjkJ
-            =3R77
-            -----END PGP MESSAGE-----
-        fp: E357B3731E9AFAB4FCF87A0CDAE80E930711EA3A
-    encrypted_regex: ^(data|stringData)$
-    version: 3.6.1
+    configuration.yml: |
+        host: 0.0.0.0
+        port: 8080
+
+        log_level: trace
+
+        jwt_secret: "HEAG_drug2wox*touc"
+        default_redirection_url: https://hortafcul.pt
+
+        totp:
+          issuer: auth.hortafcul.pt
+
+        authentication_backend:
+          file:
+            path: /config/users_database.yml
+
+        access_control:
+          default_policy: deny
+
+          rules:
+            - domain: 'hortafcul.pt'
+              subject:
+                - "group:admin"
+                - "group:guardians"
+              policy: one_factor
+
+            - domain: '*.infra.hortafcul.pt'
+              subject:
+                - "group:admin"
+              policy: one_factor
+
+            - domain: '*.hortafcul.pt'
+              subject:
+                - "group:admin"
+                - "group:guardians"
+              policy: one_factor
+
+        session:
+          name: authelia_session
+          secret: "FLOX@spaw2pleb9vaic"
+          expiration: 18000 # 5 hours
+          inactivity: 300 # 5 minutes
+          domain: hortafcul.pt
+
+        regulation:
+          max_retries: 3 # more than 3 requests...
+          find_time: 60  # over 1 minute
+          ban_time: 300  # = ban for 5 minutes
+
+        storage:
+          local:
+            path: /config/db.sqlite3

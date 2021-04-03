@@ -29,7 +29,6 @@ https://toolkit.fluxcd.io/get-started/
 
 Run `flux uninstall`
 
-
 ## Adding SOPS
 
 1. Generate secret key with `./scripts/gen-gpg-key.sh`

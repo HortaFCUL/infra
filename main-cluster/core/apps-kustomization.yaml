@@ -14,3 +14,7 @@ spec:
   validation: client
   dependsOn:
     - name: flux-system
+  decryption:
+    provider: sops
+    secretRef:
+      name: sops-gpg

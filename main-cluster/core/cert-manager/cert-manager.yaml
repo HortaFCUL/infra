@@ -14,18 +14,22 @@ spec:
       version: v1.2.0
   interval: 30m
   values:
-    installCRDs: false
+    installCRDs: true
+
     extraArgs:
     - --dns01-recursive-nameservers=1.1.1.1:53
     - --dns01-recursive-nameservers-only
+
     cainjector:
       replicaCount: 1
+
     podDnsPolicy: "None"
     podDnsConfig:
       nameservers:
       - "1.1.1.1"
       - "8.8.8.8"
-    # Enabled once prometheus-operator is installed
+
+    # TODO: Enable later
     prometheus:
       enabled: false
       servicemonitor:

@@ -6,4 +6,4 @@ metadata:
   namespace: nfs-server-provisioner
 spec:
   interval: 30m
-  url: https://kubernetes-charts.storage.googleapis.com/
+  url: https://charts.helm.sh/stable/

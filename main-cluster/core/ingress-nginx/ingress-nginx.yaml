@@ -1,0 +1,46 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: ingress-nginx
+  namespace: ingress-nginx
+spec:
+  chart:
+    spec:
+      chart: ingress-nginx
+      sourceRef:
+        kind: HelmRepository
+        name: ingress-nginx-charts
+      version: 3.20.1
+  interval: 1h
+  values:
+    controller:
+      replicaCount: 1
+      ingressClass: internal
+
+      extraArgs:
+        default-ssl-certificate: "cert-manager/hortafcul-tls"
+
+      config:
+        #  global-auth-url: "https://auth.hortafcul.pt/api/verify"
+        #  global-auth-signin: "https://auth.hortafcul.pt"
+        proxy-body-size: "0"
+        ssl-protocols: "TLSv1.3 TLSv1.2 TLSv1.1"
+        use-proxy-protocol: "true"
+        hsts: false
+
+
+      service:
+        enabled: true
+        type: LoadBalancer
+        annotations:
+          service.beta.kubernetes.io/do-loadbalancer-name: "hortafcul-traefik"
+          service.beta.kubernetes.io/do-loadbalancer-protocol: "http"
+          service.beta.kubernetes.io/do-loadbalancer-http-ports: "80"
+          service.beta.kubernetes.io/do-loadbalancer-tls-ports: "443"
+          service.beta.kubernetes.io/do-loadbalancer-tls-passthrough: "true"
+          service.beta.kubernetes.io/do-loadbalancer-healthcheck-port: "80"
+          service.beta.kubernetes.io/do-loadbalancer-healthcheck-protocol: "tcp"
+          #service.beta.kubernetes.io/do-loadbalancer-healthcheck-protocol: "http"
+          #service.beta.kubernetes.io/do-loadbalancer-healthcheck-path: "/ping?src=do-lb"
+          service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: "true"

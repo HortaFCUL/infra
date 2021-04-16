@@ -4,66 +4,35 @@ metadata:
     name: authelia-config
     namespace: authelia
 data:
-    users_database.yml: |
-        # docker run authelia/authelia:latest authelia hash-password 'yourpassword'
-        users:
-          tiago:
-            displayname: "Tiago Dias"
-            password: "$argon2id$v=19$m=1048576,t=1,p=8$SW9DY0Y5cHFSSHZWM3A3TA$PuqcY+7wWe+ri4lI64tkxbYMBVGbuD0/iM1FPaW+LV0" # paLxEsfQA2LE
-            email: "tiagoadias@gmail.com"
-            groups:
-              - admins
-              - guardians
+    users_database.yml: ENC[AES256_GCM,data:HOasyeMyLES40NZXUyzAayZAKJ2F9HNSzliugAqKJf7Mzo2afyKTcBX/UzbNwqx9//UhVQvzIzYOnSs58RKoLMxRHB4jMYVoWXR2QLlGvhnY6sznOGcoWqjxNhV0TNhdLR0G6L5gCRt8/0n4BuEF3xW5O2DC5TFh1DQFb5SQhgZUtcKiaj8WVuFwK/M2nmHmxdQe7+stYzQN9VWN4/8a1ai+j4eODZJ5P0PtZ9ft39EposYi78HqigebiqulLhXFwMYAxpSLpV5SRXu1stk7abENWTbklc7e2S7RRiFBGJOdq4EkggOk+kOTvvwMpGfYWHto1+SOOfP25Q3PwEaoYOWEki5zZ0/Z4YEss+sb9X6WyPISWkpTh+lg3LX6tXjaz/JvE00Le0Fivs3eWGXMqmvLUrQXIWXhtfF9AyHgWwpJyi3oW/mUdk51PaI=,iv:8cCeIoL0SqO8bOaIeAlLqBMcaYMRIKY2KnhFa0ps9bA=,tag:mNnnnP/jM3tQPI7GGDrJoA==,type:str]
+    configuration.yml: ENC[AES256_GCM,data:RvU2YN/tieeq8P4zXwYaY1RDCiVekWPVIUnIrp5nKZ5fS2lioJR3TT7bCXZgQgLDKnMbjkuk5562Bb5NnVZw6MV7J8+peMJsNHvGYURUhf0l3sYjheszctITvVJysmAQ8wilf01bdBjC8Io2UsrVZtv89szrchUg6DTk3AsGS/lmK9eNauP8UqQdS8zXzQyObr4PxP5/VYACc4hT3GPcHTMsX7NYOGPV7GieJ/By2GH7z5WdxtuHu7/G05HS3VW9OkRrqrwngEMWDExvwKW5uso/fZ36g0rpom9b03XFGyKaVTxDqUItzXqYBQpCn6+l5EV9GfldNodd6d51raMHqLMtD6lRxqtc0lTbZfvI0+D0ZWJ/04rXBKBG/ta1gwTj3r7bhcBh/gxuuzlnb0jwB/1Gmq0a49AO+CqzFzyb5fPfZ/RNcQxT24i8Tqc56Y+XGdiXbsvPtSJXsDO1WsgJSF1MPz7JmZ2YCAltVgxymVg4Byq1ZhggxaHUiPdBXOKL0uYOQpcakcBI3vqg5++cq8ySGgimKmgx+ZL87nvFlAvsg/upyovTW8wKmnJPp7lu/bmlYCTlDeoGvoFbY16lCAW6j9BrGF7KxxaA2bVWQnpGf42i0xyc3mAQvTVt/1Ww4BzgV2T/UB4MBgnUtddfjrQlly71aOBkmsrTseh2RrT837u9BJbtQGTiWZwI+xsjIq9JB8ArjGebPjuKaAWLg6ZKDvnKcbhiS6nSqd408pceTeDNX2KTHeYvUHJ/uCMUo5pJMb43q32Fj74fktqmeVsv/lOps6mpjop+MvJQEyX+N3Z5ozMO7KKK4KcMwBb+rZff/TNnUli1xHHZ+ve4OqxYiIiLuFVivOdUZkEZq0acsS0U3PjF7Aj37v4q7EoJonRKCkq2MQFPFScz+qSRdqAV7j6o3R9rrylYvNjdUKaZRINpuLlT9zT8xa3Qnj3y6q7qXYzx1T9x5VrVhUx4E/0B+bahvKbuMQdDFgMvrzSg0Sqm2dGZHfu5/bV6OqxCmupIS7EOO2B34fHD1UVq/2GY2pVFVc/bznL//BZbov7i+WT+/twmH2nZ/h8aL4m08CieBG3ZHSGbJdUTJVQEnUmiLo27l2lhFrhkpcIZca7Iph3w+yVpdGIerosxb4bxmqlLES3ZkIxi+Ly46cwla00A2uWuDnQzH7hzLVYHkOhPJgyjCYGYPNuzV1IAC8aGTMlklhDisSWQh58PeaySkS0V8gaUXqj4YqKpD724UEpMwipcAY1FF4Wyq5c5xF0s8VS6MYxJ3n1MqxNjcCBPjttgCz7ruNPnndeXePcThsmfsrpfb5DPE6Vx9RaWsn3ovFcUikmriscciBO4QG0scyQ1pB7fsW5vh1+WKFf8ov/SiihTePcRNcPoT+sG/ZQEsukLYnPRyT5G514r+/NHhW8pHmu6rJ9uuSGCKsfxYLu3EwgVTIioqLPud72zvKc3G1d3vCqaXvOJF5jqlZl9QSTrDb7FR1c+Tl8h7GorngqhG3Fx+kHr71JBiOB8l4dXFLsfahFsEpPyOMD6iNg5Wm68t4tFI6WmHg8GZA+yJqJLfRSJD914erRxsgFjn0tOVHQz8qwu24RRRogO/6diCPZ7foiLDVkzDMUXCksWtuGHN6gSyuJvjT5AbUgnFn3kDVbnJkHwRZPlE6PcMvXPHosvziu0BySv4XzyeHlKMKZnEafLZH/voHWweINvxoaT1Biio7bc6i0VbwneYrqMAKJH/VW+FFjnHco2Ju/sFcFXpUtOOh00CaQ901W3Bz4N6Th/fAbufWZlBHo7JfxQHbkcOUa/zoBTfhJnQA==,iv:notbj+w1VRPlMiWbah5rfkXJDkyJELGbpt4/C10dm0s=,tag:ebW3OlnOAPZB3Qb913/lpQ==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    lastmodified: '2021-04-16T17:23:16Z'
+    mac: ENC[AES256_GCM,data:N4y2zb9He5HdrBCu8V6ixKC3GwCCJ/Kd3gcpnmanj5d9/V5Ymt3zhz77E1qicSJlGKvMVzDs2sCJmOgudqF4hvf5mUho7kO3hjYat1LHBIohKaDF4+uEFRetxcXP0f4WeoaoOMVVXEWt/fYSViWw7qF69g8znqHpgBbPeD9wmH4=,iv:xvIHePFQDAJSvvf2A0tpOyMVjJ4B7MlHRaZLqwnADMI=,tag:burPPZf4XzHwxSCtY87Eyg==,type:str]
+    pgp:
+    -   created_at: '2021-04-16T17:23:16Z'
+        enc: |
+            -----BEGIN PGP MESSAGE-----
 
-    configuration.yml: |
-        host: 0.0.0.0
-        port: 8080
-
-        log_level: trace
-
-        jwt_secret: "HEAG_drug2wox*touc"
-        default_redirection_url: https://hortafcul.pt
-
-        totp:
-          issuer: auth.hortafcul.pt
-
-        authentication_backend:
-          file:
-            path: /config/users_database.yml
-
-        access_control:
-          default_policy: deny
-
-          rules:
-            - domain: 'hortafcul.pt'
-              subject:
-                - "group:admin"
-                - "group:guardians"
-              policy: one_factor
-
-            - domain: '*.infra.hortafcul.pt'
-              subject:
-                - "group:admin"
-              policy: one_factor
-
-            - domain: '*.hortafcul.pt'
-              subject:
-                - "group:admin"
-                - "group:guardians"
-              policy: one_factor
-
-        session:
-          name: authelia_session
-          secret: "FLOX@spaw2pleb9vaic"
-          expiration: 18000 # 5 hours
-          inactivity: 300 # 5 minutes
-          domain: hortafcul.pt
-
-        regulation:
-          max_retries: 3 # more than 3 requests...
-          find_time: 60  # over 1 minute
-          ban_time: 300  # = ban for 5 minutes
-
-        storage:
-          local:
-            path: /config/db.sqlite3
+            hQIMA7C6ZdcckODLARAAiJO7Xs2rjnKSU0uaxeC/SBwHbqa6bcb+3SMszXr1s3Z3
+            5oB3u9gEBpA6VbCH7+OQDyWIONbqltllLhgxTSAKLz1/eGgMYS+/owXofEh5blPB
+            G19NJaXc3EkE5yIebkGyH4NXoBipy2dir9OiCZhU6DoPlcKobLEsbKKfI5zRHjir
+            Cs9fnfoqdBrN4QbWl8qBOWafKgvA91JRC+7VOPEbagN+2mJZqJzkfp6DZMyTIBKB
+            57ws5OlLmfUmTCvZMeGLmT3aaPL6Nu3jnt3zDrtY9gj9KtqBDpR8jovAxsCeTyPn
+            qMpOsZ2+bmWkaiclchoh5sBOlCvaGB7xXHaYYn6zYgCcPz6ZEHtvmLWh6bk3tzwX
+            aUp2a6gjObw6zKVnlDWl257nFvcSbSsLNHh9VOSRltjn1v7Et52cWvuOrjinTzCa
+            9zwzVyVbbwlgdqfzaQ4QGk4Xl9I51usWi4l0u1LgVDSkh/OYkHCb66PZvLqEy26S
+            cXOjM9USq4EIsrnk7JnUWY8kU/A4ioPGNFHpxlNxKGKtmWsDISzlwi2hUJMwKLBD
+            8EZDypy5/etrlknaDGtKkKanwOZvsz6utZPwl745JMXOlzhA+UBUpvBPnCiE3TQb
+            /RRx+r9JAYnzwK5nwJ+0EkkcHaI+FGdZy7/DpTAw0jSpwg6GsCB+jFLD2DJLE+zS
+            XgGu6L9rKM4gkVBZdC1qKXAE9deiJ2uyH7qIeDUfY9rPGyu6hKeUpXsxrlsgR2u2
+            Nhkxyi/cclU9FVJjpKya1jWmOXt4OsgWru1vf0GhG1dmFo2u9sNN+i87BhIFIkY=
+            =L+Kf
+            -----END PGP MESSAGE-----
+        fp: E357B3731E9AFAB4FCF87A0CDAE80E930711EA3A
+    encrypted_regex: ^(data|stringData)$
+    version: 3.6.1

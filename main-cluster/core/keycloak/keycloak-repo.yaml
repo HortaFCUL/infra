@@ -1,0 +1,10 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: keycloak-charts
+  namespace: keycloak
+spec:
+  interval: 1h
+  url: https://charts.bitnami.com/bitnami
+  timeout: 3m

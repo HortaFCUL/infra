@@ -21,6 +21,9 @@ spec:
               serviceName: authelia
               servicePort: 80
             path: /
+  tls:
+    - hosts:
+        - auth.hortafcul.pt
 
 ---
 apiVersion: v1

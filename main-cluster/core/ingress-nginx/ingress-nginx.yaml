@@ -22,7 +22,7 @@ spec:
         default-ssl-certificate: "cert-manager/hortafcul-tls"
 
       config:
-        global-auth-url: "https://auth.hortafcul.pt/api/verify"
+        global-auth-url: "http://authelia.authelia.svc.cluster.local/api/verify"
         global-auth-signin: "https://auth.hortafcul.pt"
         proxy-body-size: "0"
         ssl-protocols: "TLSv1.3 TLSv1.2 TLSv1.1"

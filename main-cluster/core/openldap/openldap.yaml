@@ -21,7 +21,7 @@ spec:
       storageClass: nfs
       size: 10Gi
 
-    existingSecret: true
+    existingSecret: openldap-secrets
 
     env:
       LDAP_ORGANISATION: "HortaFCUL"

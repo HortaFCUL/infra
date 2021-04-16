@@ -28,6 +28,7 @@ spec:
         ssl-protocols: "TLSv1.3 TLSv1.2 TLSv1.1"
         use-proxy-protocol: "true"
         hsts: false
+        ssl-redirect: "true"
 
       service:
         enabled: true

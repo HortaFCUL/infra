@@ -1,0 +1,59 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: wordpress
+  namespace: wordpress
+spec:
+  chart:
+    spec:
+      chart: wordpress
+      sourceRef:
+        kind: HelmRepository
+        name: wordpress-charts
+      version: 10.10.3
+  interval: 1h
+  values:
+    replicaCount: 1
+
+    wordpressUsername: admin
+    existingSecret: wordpress-secrets
+
+    wordpressEmail: hortafcul@gmail.com
+    wordpressFirstName: HortaFCUL
+    wordpressLastName: Admin
+    wordpressBlogName: HortaFCUL
+
+    smtpHost: in-v3.mailjet.com
+    smtpPort: 587
+    smtpUser: acaca0635a6ba77a8e06101ba3f5fdad
+    smtpProtocol: "tls"
+    smtpExistingSecret: wordpress-secrets
+
+    allowEmptyPassword: false
+
+    ingress:
+      enabled: true
+      annotations:
+        kubernetes.io/ingress.class: "nginx"
+      extraTls:
+        - hosts:
+            - hortafcul.pt
+
+    persistence:
+      enabled: true
+      storageClass: nfs
+      size: 10Gi
+
+    mariadb:
+      enabled: true
+      auth:
+        rootPassword: "wp_root"
+        database: bitnami_wordpress
+        username: bn_wordpress
+        password: "wp_user"
+      primary:
+        persistence:
+          enabled: true
+          storageClass: nfs
+          size: 10Gi

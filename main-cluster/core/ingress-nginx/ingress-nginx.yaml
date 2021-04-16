@@ -16,7 +16,7 @@ spec:
   values:
     controller:
       replicaCount: 2
-      ingressClass: internal
+      ingressClass: nginx
 
       extraArgs:
         default-ssl-certificate: "cert-manager/hortafcul-tls"

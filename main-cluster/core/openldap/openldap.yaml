@@ -1,0 +1,49 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: openldap
+  namespace: openldap
+spec:
+  chart:
+    spec:
+      chart: openldap-stack-ha
+      sourceRef:
+        kind: HelmRepository
+        name: openldap-charts
+      version: 2.1.3
+  interval: 1h
+  values:
+    replicaCount: 1
+
+    persistence:
+      enabled: true
+      storageClass: nfs
+      size: 10Gi
+
+    existingSecret: true
+
+    env:
+      LDAP_ORGANISATION: "HortaFCUL"
+      LDAP_DOMAIN: "hortafcul.pt"
+
+    phpldapadmin:
+      enabled: true
+      ingress:
+        enabled: true
+        hosts:
+          - ldap.infra.hortafcul.pt
+        annotations:
+          kubernetes.io/ingress.class: "nginx"
+          nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+
+    ltb-passwd:
+      enabled: true
+      ingress:
+        enabled: true
+        hosts:
+          - change-password.hortafcul.pt
+        annotations:
+          kubernetes.io/ingress.class: "nginx"
+          nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+        path: /

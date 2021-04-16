@@ -1,9 +1,0 @@
----
-apiVersion: source.toolkit.fluxcd.io/v1beta1
-kind: HelmRepository
-metadata:
-  name: nfs-server-provisioner
-  namespace: nfs-server-provisioner
-spec:
-  interval: 30m
-  url: https://charts.helm.sh/stable/

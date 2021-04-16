@@ -71,8 +71,26 @@ spec:
           volumeMounts:
             - name: config
               mountPath: /config
+            - name: persist
+              mountPath: /persist
 
       volumes:
         - name: config
           configMap:
             name: authelia-config
+        - name: persist
+          persistentVolumeClaim:
+            claimName: authelia-persist
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: authelia-persist
+  namespace: authelia
+spec:
+  storageClassName: nfs
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 50Mi

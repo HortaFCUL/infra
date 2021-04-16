@@ -4,34 +4,34 @@ metadata:
     name: authelia-config
     namespace: authelia
 data:
-    users_database.yml: ENC[AES256_GCM,data:HOasyeMyLES40NZXUyzAayZAKJ2F9HNSzliugAqKJf7Mzo2afyKTcBX/UzbNwqx9//UhVQvzIzYOnSs58RKoLMxRHB4jMYVoWXR2QLlGvhnY6sznOGcoWqjxNhV0TNhdLR0G6L5gCRt8/0n4BuEF3xW5O2DC5TFh1DQFb5SQhgZUtcKiaj8WVuFwK/M2nmHmxdQe7+stYzQN9VWN4/8a1ai+j4eODZJ5P0PtZ9ft39EposYi78HqigebiqulLhXFwMYAxpSLpV5SRXu1stk7abENWTbklc7e2S7RRiFBGJOdq4EkggOk+kOTvvwMpGfYWHto1+SOOfP25Q3PwEaoYOWEki5zZ0/Z4YEss+sb9X6WyPISWkpTh+lg3LX6tXjaz/JvE00Le0Fivs3eWGXMqmvLUrQXIWXhtfF9AyHgWwpJyi3oW/mUdk51PaI=,iv:8cCeIoL0SqO8bOaIeAlLqBMcaYMRIKY2KnhFa0ps9bA=,tag:mNnnnP/jM3tQPI7GGDrJoA==,type:str]
-    configuration.yml: ENC[AES256_GCM,data:RvU2YN/tieeq8P4zXwYaY1RDCiVekWPVIUnIrp5nKZ5fS2lioJR3TT7bCXZgQgLDKnMbjkuk5562Bb5NnVZw6MV7J8+peMJsNHvGYURUhf0l3sYjheszctITvVJysmAQ8wilf01bdBjC8Io2UsrVZtv89szrchUg6DTk3AsGS/lmK9eNauP8UqQdS8zXzQyObr4PxP5/VYACc4hT3GPcHTMsX7NYOGPV7GieJ/By2GH7z5WdxtuHu7/G05HS3VW9OkRrqrwngEMWDExvwKW5uso/fZ36g0rpom9b03XFGyKaVTxDqUItzXqYBQpCn6+l5EV9GfldNodd6d51raMHqLMtD6lRxqtc0lTbZfvI0+D0ZWJ/04rXBKBG/ta1gwTj3r7bhcBh/gxuuzlnb0jwB/1Gmq0a49AO+CqzFzyb5fPfZ/RNcQxT24i8Tqc56Y+XGdiXbsvPtSJXsDO1WsgJSF1MPz7JmZ2YCAltVgxymVg4Byq1ZhggxaHUiPdBXOKL0uYOQpcakcBI3vqg5++cq8ySGgimKmgx+ZL87nvFlAvsg/upyovTW8wKmnJPp7lu/bmlYCTlDeoGvoFbY16lCAW6j9BrGF7KxxaA2bVWQnpGf42i0xyc3mAQvTVt/1Ww4BzgV2T/UB4MBgnUtddfjrQlly71aOBkmsrTseh2RrT837u9BJbtQGTiWZwI+xsjIq9JB8ArjGebPjuKaAWLg6ZKDvnKcbhiS6nSqd408pceTeDNX2KTHeYvUHJ/uCMUo5pJMb43q32Fj74fktqmeVsv/lOps6mpjop+MvJQEyX+N3Z5ozMO7KKK4KcMwBb+rZff/TNnUli1xHHZ+ve4OqxYiIiLuFVivOdUZkEZq0acsS0U3PjF7Aj37v4q7EoJonRKCkq2MQFPFScz+qSRdqAV7j6o3R9rrylYvNjdUKaZRINpuLlT9zT8xa3Qnj3y6q7qXYzx1T9x5VrVhUx4E/0B+bahvKbuMQdDFgMvrzSg0Sqm2dGZHfu5/bV6OqxCmupIS7EOO2B34fHD1UVq/2GY2pVFVc/bznL//BZbov7i+WT+/twmH2nZ/h8aL4m08CieBG3ZHSGbJdUTJVQEnUmiLo27l2lhFrhkpcIZca7Iph3w+yVpdGIerosxb4bxmqlLES3ZkIxi+Ly46cwla00A2uWuDnQzH7hzLVYHkOhPJgyjCYGYPNuzV1IAC8aGTMlklhDisSWQh58PeaySkS0V8gaUXqj4YqKpD724UEpMwipcAY1FF4Wyq5c5xF0s8VS6MYxJ3n1MqxNjcCBPjttgCz7ruNPnndeXePcThsmfsrpfb5DPE6Vx9RaWsn3ovFcUikmriscciBO4QG0scyQ1pB7fsW5vh1+WKFf8ov/SiihTePcRNcPoT+sG/ZQEsukLYnPRyT5G514r+/NHhW8pHmu6rJ9uuSGCKsfxYLu3EwgVTIioqLPud72zvKc3G1d3vCqaXvOJF5jqlZl9QSTrDb7FR1c+Tl8h7GorngqhG3Fx+kHr71JBiOB8l4dXFLsfahFsEpPyOMD6iNg5Wm68t4tFI6WmHg8GZA+yJqJLfRSJD914erRxsgFjn0tOVHQz8qwu24RRRogO/6diCPZ7foiLDVkzDMUXCksWtuGHN6gSyuJvjT5AbUgnFn3kDVbnJkHwRZPlE6PcMvXPHosvziu0BySv4XzyeHlKMKZnEafLZH/voHWweINvxoaT1Biio7bc6i0VbwneYrqMAKJH/VW+FFjnHco2Ju/sFcFXpUtOOh00CaQ901W3Bz4N6Th/fAbufWZlBHo7JfxQHbkcOUa/zoBTfhJnQA==,iv:notbj+w1VRPlMiWbah5rfkXJDkyJELGbpt4/C10dm0s=,tag:ebW3OlnOAPZB3Qb913/lpQ==,type:str]
+    users_database.yml: ENC[AES256_GCM,data:lkZjoosWLChcZMz9n2xFFVuO4dcVwCe63JnTEwL5vtHHt/1RW63QYqPf9M9wV+JwUKs8lgi9h3KxDSF2GuMhJQW8RQQ+0ncjOlPVPh82Jg/N5c64dEoBpLBNVfSQ5krVXa2E0DZFzeNrE7wVC6YHtUAIZ5AWhayCibFyLhEXGLI33DdWJ93S9rXRHvlDdAgwhTkw7zF0W4iCTn8WlaoadKnkmg1M+nJj54Xv3GQ5CiEUBsUIgbfPPgq6O9URtg4GleGKKAdOqqwaHj1k8hMbUcRvIEmB41cH0bZ1snYZJUYAk+YzaqpXwIPfkgpfUXifAb6CPEjDwdHozPp4K81kqYfxl36sEWm1ATGQ7eiIO2/bFmMp14KQqX1u4zG9Fz2ME4/6tUTDihv8z2Xau3d/P3sCq/BzZhrYIIRJQYRtTcPwDrBP0bA4Mxf7OPc=,iv:IHJXLY29hZ81wIFlzRB5NhfQiiGHxI/XMqkAW3bhXIk=,tag:c9qocYXG5GA+gd3dcMg/Ug==,type:str]
+    configuration.yml: ENC[AES256_GCM,data:00kmYkITs4uUTcoFmJPPusNoqIyY6/tptyuQ4i82eOWzAhQIdeVfCa3iun8qDwHGU06+08TE/DMrH7208GejR93GN5G8+oZPNy+g6Fw2DesvcLsIO2Pa2eOwCVZGA5RnfmabJHBQIaDJBKx46dO/XItNbn+Txs3wjLKxE/YOaZMWYOsJJTtV0FOLc4HsBjcbODExQ3c3slrcLm3mjl6DMvoJ7dS0jMwmK2ZsAFX3N7G+5uuhtYbSM7XNCpCwF8XN16ehAdPb2VE5AUGjFgB6GQJN+N7DV0T2MI9xAc0wb2LDQ/7xjAZAf7JrJynYr3jkFDdwrGWgqilUgDX8z/LwxFLgnpu7a0352OO7yJj8XHUqvZO+QxWcV7uIKrwynpUtS+B9cLLP/XD8T+zvCYOt9qwJZYIr660ccZ6NbOfqIsqu2xXybSgan+bRrGOayaPw37rGG0vzbU7r68DrS5lGaPJlk+iDJ00GfFOybmV59T1K6lV5lMyLwhHUi6s1T4DoTv5JVfDdtVuRLLWiCqJy4r7mjnuJqiIBqy5VoY6pWSDblLV7HtcXan+gP63MoI9gTKxwp6aFZVWWiCCtL8J6SnVqZ1R4g6d9tuSpVf17dNx6In7jtlj7n/2owgAqI5ZGW8jyWEx5YOyX34HZqqIpQLrWDP87VeizkRlVUEOWjlbo2Ayv2lfY9EAAnS1wQaGEp5M+1erFYzHUdCSiVxxpDUmGwr5sgAYqd5hEQQRtxIig9vceyurni0/tKUfr9H15iXI4VfM5c/2Fx/j32uUoJcTlQXVtiPE7hU3f+s08o+lkEbfppaqxRfXh7Xg6JkDmO3MYoaE3ZC9kpLbHu/y5gfQyKWcprFu1ozpYG3gIylERt2SkyzNdO/IBlxpiXNDBXb80EIJKc3OZBy07MiDjMygawSmebbCphUP9hI/hEHoBZvhcMjwkmpLOoqaWXcQz0voqpR0nRlAG+K0B42XnW8fQGbGEb8SNlY7vO/TulV3ShXnDJrrNZlseDYVXxxAV+mgFNhI0yFsr3XLkECjnYPvXvCjw4AQVwjaHS0W3AtvBdWxiLt3opJdUewRnQ2UIlr7eOxr3HtG5WzwZyp6Ooid62tlr9rDxfwCjvEyJc36+7gXxFws6OjsFUIxt5Pv4Gsf0r62BswQ6reHwqOgjpwAhOwTqPxa02yWtDcKjNOv1e0S+KLrb6t0RrRmfKoL5XS2azi2UIqFBs/zzMyhNcfNGKiRLBXP6s4YLuSniVuSr2ZSsILSAf5ZqIUVJiuEN/kz1AJM/kdU8Kykcmm2yZjOThfmBWSND89RadgNrBTYDQ4OxEr0NAt5mcLD7YagAnAquyEKXkGS5uZNnnqecJ5Jo4eiJgpInuVrsutfWpk9A4IB6ZkkuRaleQswiG2RkArxU0PwjQzR3ejTUVhdQhubQWC3qjKI7UJue2SVysZVktYY/rIkql3KyNoHaic8PK4LUwU5r6xymGBJhGjS3dLyc5AL46ZojPJopWsLuWY54izufdinCjpmSuO5zZscIx0rvFKgEalzJW+3xRRSyPOHa4FTVATvFcLNUPbLziXj5j2t3JpO65JLY1fL1hNxQx3mlyO/IC+bLtwp02+gndX34KW1GxctyXNPoDp0e3K6WjgK5KWHYTCCOrNqdKXnHPLWh0ZtnB298yVVoX+P7v5yGEacQEdIhw9EvhBMpHvQhPTpXS0D5VmdjTep9uHHD5nyzITcni0Gip3bYrBmaZ4k92Ixy8NRFj6ibOQ+fK1d70Rprt7Qs7R3UWLjT7y9j87AAPl9I01Ec29tYEb0kGSeicD4xgn8vpKHoWe4=,iv:WSTR6RbWOKhvkfbd9C7LqBQwFdfZWQceByUiCpWHlMs=,tag:3Tq3JnllJeHCLQSctULUfQ==,type:str]
 sops:
     kms: []
     gcp_kms: []
     azure_kv: []
     hc_vault: []
-    lastmodified: '2021-04-16T17:23:16Z'
-    mac: ENC[AES256_GCM,data:N4y2zb9He5HdrBCu8V6ixKC3GwCCJ/Kd3gcpnmanj5d9/V5Ymt3zhz77E1qicSJlGKvMVzDs2sCJmOgudqF4hvf5mUho7kO3hjYat1LHBIohKaDF4+uEFRetxcXP0f4WeoaoOMVVXEWt/fYSViWw7qF69g8znqHpgBbPeD9wmH4=,iv:xvIHePFQDAJSvvf2A0tpOyMVjJ4B7MlHRaZLqwnADMI=,tag:burPPZf4XzHwxSCtY87Eyg==,type:str]
+    lastmodified: '2021-04-16T18:16:19Z'
+    mac: ENC[AES256_GCM,data:392HCpFtBOB+8pdcExJrANye4k+kUb8E8gAvHyg0a0eZSoOzHzQk89eeV5yX4R6UaVNXFI+RTrAC3R1kyliWXRnuZPHYVc73a8cDf5s/n0DEfvrF0/Ts17qUuQni8G2I8rCD8w7uB3PATybzrjJcgx93MnB8MQ8BgZEW0LAuyA8=,iv:lPkns80bywhL6D+DSZli9EsrADyR9jc0uyAuJn9ERRk=,tag:vKX71HFkIHbMTRCwP4hEmA==,type:str]
     pgp:
-    -   created_at: '2021-04-16T17:23:16Z'
+    -   created_at: '2021-04-16T18:16:18Z'
         enc: |
             -----BEGIN PGP MESSAGE-----
 
-            hQIMA7C6ZdcckODLARAAiJO7Xs2rjnKSU0uaxeC/SBwHbqa6bcb+3SMszXr1s3Z3
-            5oB3u9gEBpA6VbCH7+OQDyWIONbqltllLhgxTSAKLz1/eGgMYS+/owXofEh5blPB
-            G19NJaXc3EkE5yIebkGyH4NXoBipy2dir9OiCZhU6DoPlcKobLEsbKKfI5zRHjir
-            Cs9fnfoqdBrN4QbWl8qBOWafKgvA91JRC+7VOPEbagN+2mJZqJzkfp6DZMyTIBKB
-            57ws5OlLmfUmTCvZMeGLmT3aaPL6Nu3jnt3zDrtY9gj9KtqBDpR8jovAxsCeTyPn
-            qMpOsZ2+bmWkaiclchoh5sBOlCvaGB7xXHaYYn6zYgCcPz6ZEHtvmLWh6bk3tzwX
-            aUp2a6gjObw6zKVnlDWl257nFvcSbSsLNHh9VOSRltjn1v7Et52cWvuOrjinTzCa
-            9zwzVyVbbwlgdqfzaQ4QGk4Xl9I51usWi4l0u1LgVDSkh/OYkHCb66PZvLqEy26S
-            cXOjM9USq4EIsrnk7JnUWY8kU/A4ioPGNFHpxlNxKGKtmWsDISzlwi2hUJMwKLBD
-            8EZDypy5/etrlknaDGtKkKanwOZvsz6utZPwl745JMXOlzhA+UBUpvBPnCiE3TQb
-            /RRx+r9JAYnzwK5nwJ+0EkkcHaI+FGdZy7/DpTAw0jSpwg6GsCB+jFLD2DJLE+zS
-            XgGu6L9rKM4gkVBZdC1qKXAE9deiJ2uyH7qIeDUfY9rPGyu6hKeUpXsxrlsgR2u2
-            Nhkxyi/cclU9FVJjpKya1jWmOXt4OsgWru1vf0GhG1dmFo2u9sNN+i87BhIFIkY=
-            =L+Kf
+            hQIMA7C6ZdcckODLAQ//VTnCKvNtb8OPaWRNHPVQOM7ws4c8ZnZMGm3U5sxHHZnC
+            gsj3u/S/h3AmKu6DlPHAEjk/SzjUtRKy6xhSHmpa1vtkwl/5leqmbd9dEFfKw9LX
+            sqVYJxX4l37xqpUUhfjc1lIHxgSagnfVT4cZrPJo/nfQq7SNmzRc9vQ/vRyvsVhA
+            1yZlW69J975WFjBeCLSa5dVSxL/JG3aDNbbJOkpKhqrD46uuNXrm9Zjh47+rJNNs
+            w4M4xsoYvaZIU/bQ1431CXZF07iqjdDi9HGuQl+CvNGNJi3KZOl33dCkKbQszHxA
+            NLvvgwhv8UaPk4Db7rPCbbR46Y5HI0M3l2e+TZCgJDPp6/RJ7cLJbvzSON8OlHO6
+            3YqOsxN/XwhE9W3/7T53N9UxHl/ZO4ImwBdtlNYVBsXML/7PK6TmjHMc32mAM6Qp
+            pZ4JLvo3YgM2YvUVDnDMq4cH6dwJSwy/HRx8mE7hbYTL9Y3pwD79lHIUhabLp7X3
+            IEfy1fbSB5oNeWXUQItme6kIbHKWH9lJwtgBPrw06YG9J9mMqUD5G9HDyv19YEr9
+            7GxaNeDIA/djv0///g3LepiTUhz5kCr0qZZNYMFhx4S0HvPWMTm2ATSZtkCDmapF
+            SQvbVJg9K2LO7GyvTlNdh/fYZ5p5Hqr4wBnmiPz+VJtbFBRbbcVlpsDmYLbpoMTS
+            XgHVo61Ex+5MIwGW79C1F2/5B571POeLjJ/3RHAS+Bh5pwF4qPzzHdeUDp3HqfM0
+            HQfpZKzmugvs96vxW4JHRj+fL93MstRjF2ko3SVSgjPUX7Ue9pfSzzRVfWoclqA=
+            =VePr
             -----END PGP MESSAGE-----
         fp: E357B3731E9AFAB4FCF87A0CDAE80E930711EA3A
     encrypted_regex: ^(data|stringData)$

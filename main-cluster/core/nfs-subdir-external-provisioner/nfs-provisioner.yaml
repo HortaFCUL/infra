@@ -20,7 +20,7 @@ spec:
 
     storageClass:
       create: true
-      defaultClass: true
+      defaultClass: false
       name: nfs
       allowVolumeExpansion: true
       pathPattern: "${.PVC.namespace}/${.PVC.name}"

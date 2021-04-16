@@ -15,7 +15,7 @@ spec:
 
   values:
     nfs:
-      server: 10.114.0.5
+      server: 10.114.0.5 
       path: /srv/nfs
 
     storageClass:

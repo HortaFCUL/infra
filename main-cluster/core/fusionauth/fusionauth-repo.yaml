@@ -2,9 +2,9 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
-  name: openldap-charts
-  namespace: openldap
+  name: fusionauth-charts
+  namespace: fusionauth
 spec:
   interval: 1h
-  url: https://jp-gouin.github.io/helm-openldap/
+  url: https://fusionauth.github.io/charts
   timeout: 3m

@@ -2,9 +2,9 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
-  name: fusionauth-charts
-  namespace: fusionauth
+  name: keycloak-charts
+  namespace: keycloak
 spec:
   interval: 1h
-  url: https://fusionauth.github.io/charts
+  url: https://charts.bitnami.com/bitnami
   timeout: 3m
